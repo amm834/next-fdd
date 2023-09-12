@@ -1,0 +1,17 @@
+{
+    "name": "fetcher",
+    "license": "MIT",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "devDependencies": {
+        "eslint-config-custom": "workspace:*"
+    },
+    "dependencies": {
+        "@reactusehooks/core": "^1.1.2"
+    }
+}

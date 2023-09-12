@@ -1,11 +1,11 @@
-import React from 'react';
+"use client";
+import { useClientSide, useLocalStorage } from "@reactusehooks/core";
 
-const Home = () => {
-    return (
-        <div>
-            Home Page
-        </div>
-    );
-};
+function Home() {
+    const [token, setToken] = useLocalStorage("token", "");
+    const isClientSide = useClientSide();
+
+    return <div>Home Page {isClientSide ? token : null} </div>;
+}
 
 export default Home;
