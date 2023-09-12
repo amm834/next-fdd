@@ -5,7 +5,11 @@ function Home() {
     const [token, setToken] = useLocalStorage("token", "");
     const isClientSide = useClientSide();
 
-    return <div>Home Page {isClientSide ? token : null} </div>;
+    return (
+        <div className="bg-red-500">
+            Home Page {isClientSide ? token : null}{" "}
+        </div>
+    );
 }
 
 export default Home;
