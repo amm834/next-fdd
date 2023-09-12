@@ -26,8 +26,3 @@ export const createFetcher = ({
 
     return fetcher;
 };
-
-const fetcher = createFetcher({
-    baseURL: "https://api.github.com",
-    token: "YOUR_TOKEN",
-});
