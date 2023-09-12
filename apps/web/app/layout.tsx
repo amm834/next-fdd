@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 import Providers from "@/providers";
 import { Metadata } from "next";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
     title: "Create Next FDD",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
     children,
 }: {
-    children: React.ReactNode;
+    children: ReactNode;
 }): JSX.Element {
     return (
         <html lang="en">
